@@ -1,0 +1,106 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header, section, aside, nav, footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header, footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+/* WRITE YOUR CODE BELOW HERE */
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(AbhayaLibre-Bold.ttf);
+}
+
+@font-face {
+  font-family: mySecondFont;
+  src: url(AbrilFatface-Regular.ttf);
+}
+
+body{
+	font-family: myFirstFont;
+	font-size: 10px; 
+	line-height: 1.4;
+	letter-spacing: 2px; 
+	word-spacing: 2px;
+}
+
+h1{
+text-align: center;
+}
+
+h1, h2{
+	font-family: mySecondFont;
+	font-size: 1em; 
+	letter-spacing: 4px; 
+}
+section{
+	text-indent: 20px;
+}
+
+a{
+	text-decoration: underline;
+	outline: none;
+}
+
+a:visited {
+  color: purple;
+}
+
+a:hover {
+  color: green;
+  text-decoration: none;
+}
+a:active {
+  color: blue;
+  font-weight: bold;
+}
+a[href*="//"]::after {
+    content: url(external-link-52.png);
+}
+nav{
+  background-color: lightgrey; 
+  border: none;
+  color: black;
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
