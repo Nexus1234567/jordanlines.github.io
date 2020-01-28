@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Form </title>
+    <link rel="stylesheet" href="Styles\style.css"/>
+	<meta charset="UTF-8">
+  </head>
+  <div class = "wrapper">
+      <div class="gridmenu">
+        <h1> Form</h1>
+          <form>
+          <button type="submit" formaction="index.html">Homepage</button>
+          <button type="submit" formaction="info.html">Information</button>
+		  <button type="submit" formaction="form.html">Form</button>
+          </form>
+  </div>
+	<div class="gridheadimg">
+		<img class="center-fit" src = "Images/counter-strike-png-5212.png" width = "300" height = "200" alt="The logo for CS:GO".>
+		</div>
+	<div class ="gridform">
+	<form action="/my-handling-form-page" enctype="multipart/form-data method" = post>
+ <ul>
+  <li>
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="user_name"value="Please enter your full name">
+  </li>
+  <li>
+    <label for="mail">E-mail:</label>
+    <input type="email" id="mail" name="user_mail" value="Please enter your email">
+  </li>
+  <li>
+    <label for="scr">Score:</label>
+    <textarea id="scr" name="user_message">Please enter your score.</textarea>
+  </li>
+  <li class="button">
+  <button type="submit">Send your message</button>
+ </li>
+ </ul>
+</form>
+</div>
+</div>
+  </body>
+  </html>

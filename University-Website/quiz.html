@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quiz </title>
+    <link rel="stylesheet" href="Styles\style.css"/>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+  <div class = "wrapper">
+      <div class="gridmenu">
+        <h1> Quiz</h1>
+          <form>
+          <button type="submit" formaction="index.html">Homepage</button>
+          <button type="submit" formaction="info.html">Information</button>
+		  <button type="submit" formaction="form.html">Form</button>
+          </form>
+		  </div>
+		  	<div class="gridheadimg">
+				<img class="center-fit" src = "Images/counter-strike-png-5212.png" width = "300" height = "200" alt="The logo for CS:GO">
+			</div>
+	<script>
+	 function checkAnswers(){
+   	 sessionStorage.score = 0
+	if(document.getElementById("VirtusPro").selectedOptions[0].innerHTML =="Virtus Pro"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("Cloud9").selectedOptions[0].innerHTML =="Cloud9"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("Titan").selectedOptions[0].innerHTML =="Titan"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("Ninjas_in_Pyjamas").selectedOptions[0].innerHTML =="Ninjas in Pyjamas"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("Team_Envyus").selectedOptions[0].innerHTML =="Team Envyus"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	document.getElementById('score').value = sessionStorage.score
+	window.location="Quiz 2.html"
+	}
+	</script>
+	<div class="gridmain">
+	<p>What team is in the image below?:
+   	<select ID = "Cloud9">
+	<option value="9"></option>
+    <option value ="9">Banna</option>
+    <option value ="8">Apple</option>
+    <option value ="7">Twix</option>
+   	<option value="5">Team Envyus</option>
+ 	  <option value="4">Cloud9</option>
+ 	  <option value="3">Titan</option>
+	  <option value="2">Ninjas in Pyjamas</option>
+ 	  <option value="1">Virtus Pro</option>
+  </select></p>
+  <img src = "Images/600px-Cloud9.png " width = "300" height = "200">
+	<p>What team is in the image below?:
+   	<select ID = "VirtusPro">
+	<option value="9"></option>
+    <option value ="9">Banna</option>
+    <option value ="8">Apple</option>
+    <option value ="7">Twix</option>
+   	<option value="5">Team Envyus</option>
+ 	  <option value="4">Cloud9</option>
+ 	  <option value="3">Titan</option>
+	  <option value="2">Ninjas in Pyjamas</option>
+ 	  <option value="1">Virtus Pro</option>
+  </select></p>
+  <img src = "Images/600px-Virtus.png" width = "300" height = "200">
+
+	<p>What team is in the image below?:
+   	<select ID = "Titan">
+	<option value="9"></option>
+    <option value ="9">Banna</option>
+    <option value ="8">Apple</option>
+    <option value ="7">Twix</option>
+   	<option value="5">Team Envyus</option>
+ 	  <option value="4">Cloud9</option>
+ 	  <option value="3">Titan</option>
+	  <option value="2">Ninjas in Pyjamas</option>
+ 	  <option value="1">Virtus Pro</option>
+  </select></p>
+  <img src = "Images/600px-Titan.png" width = "300" height = "200">
+
+	<p>What team is in the image below?:
+   	<select ID = "Ninjas_in_Pyjamas">
+	<option value="9"></option>
+    <option value ="9">Banna</option>
+    <option value ="8">Apple</option>
+    <option value ="7">Twix</option>
+   	<option value="5">Team Envyus</option>
+ 	  <option value="4">Cloud9</option>
+ 	  <option value="3">Titan</option>
+	  <option value="2">Ninjas in Pyjamas</option>
+ 	  <option value="1">Virtus Pro</option>
+  </select></p>
+  <img src = "Images/600px-Ninjas_in_Pyjamas.png" width = "300" height = "200">
+	
+	<p>What team is in the image below?:
+   	<select ID = "Team_Envyus">
+	<option value="9"></option>
+    <option value ="9">Banna</option>
+    <option value ="8">Apple</option>
+    <option value ="7">Twix</option>
+   	<option value="5">Team Envyus</option>
+ 	  <option value="4">Cloud9</option>
+ 	  <option value="3">Titan</option>
+	  <option value="2">Ninjas in Pyjamas</option>
+ 	  <option value="1">Virtus Pro</option>
+  </select></p>
+  <img src = "Images/Team_EnVyUs-logo.png" width = "300" height = "200">
+  <p></p>
+	<input type="text" id="score">
+	<form>
+	<input type = "button" score ="cmdGo" value = "Next" onClick = "checkAnswers()" />
+	</form>
+     </div>
+    </div>
+  </body>
+</html>

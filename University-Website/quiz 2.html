@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Quiz: Weapons </title>
+    <link rel="stylesheet" href="Styles\style.css"/>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+  <div class = "wrapper">
+      <div class="gridmenu">
+        <h1> Quiz: Weapons</h1>
+          <form>
+          <button type="submit" formaction="index.html">Homepage</button>
+          <button type="submit" formaction="info.html">Information</button>
+		  <button type="submit" formaction="form.html">Form</button>
+          </form>
+		  </div>
+		  <div class="gridheadimg">
+			<img class="center-fit" src = "Images/counter-strike-png-5212.png" width = "300" height = "200" alt="The logo for CS:GO">
+		  </div>
+	<script>
+	 function checkAnswers(){
+	if(document.getElementById("AK47").selectedOptions[0].innerHTML =="AK47"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("M4A4").selectedOptions[0].innerHTML =="M4A4"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("M4A1-S").selectedOptions[0].innerHTML =="M4A1-S"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("Galil-AR").selectedOptions[0].innerHTML =="Galil-AR"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	if(document.getElementById("SG553").selectedOptions[0].innerHTML =="SG553"){
+	 sessionStorage.score = 1 + parseInt(sessionStorage.score)
+	}
+	document.getElementById('score').value = sessionStorage.score
+	}
+	</script>
+	<div class="gridmain">
+	<p>What weapon is this from CG:GO?:
+   	<select ID = "Galil-AR">
+	<option value="6"></option>
+   	<option value="5">AK47</option>
+ 	  <option value="4">Galil-AR</option>
+ 	  <option value="3">M4A4</option>
+	  <option value="2">SG553</option>
+ 	  <option value="1">M4A1-S</option>
+  </select></p>
+  <img src = "Images/Galilar.png " width = "300" height = "200">
+	<p>What weapon is this from CG:GO?:
+   	<select ID = "AK47">
+	<option value="6"></option>
+   	<option value="5">Galil-AR</option>
+ 	  <option value="4">AK47</option>
+ 	  <option value="3">M4A4</option>
+	  <option value="2">SG553</option>
+ 	  <option value="1">M4A1-S</option>
+  </select></p>
+  <img src = "Images/Ak47go.png" width = "300" height = "200">
+	
+	<p>What weapon is this from CG:GO?:
+   	<select ID = "M4A4">
+	<option value="6"></option>
+   	<option value="5">Galil-AR</option>
+ 	  <option value="4">AK47</option>
+ 	  <option value="3">M4A4</option>
+	  <option value="2">SG553</option>
+ 	  <option value="1">M4A1-S</option>
+  </select></p>
+  <img src = "Images/M4a4.png" width = "300" height = "200">
+
+	<p>What weapon is this from CG:GO?:
+   	<select ID = "SG553">
+	<option value="6"></option>
+   	<option value="5">Galil-AR</option>
+ 	  <option value="4">AK47</option>
+ 	  <option value="3">M4A4</option>
+	  <option value="2">SG553</option>
+ 	  <option value="1">M4A1-S</option>
+  </select></p>
+  <img src = "Images/Sg556.png" width = "300" height = "200">
+	
+	<p>What weapon is this from CG:GO?:
+   	<select ID = "M4A1-S">
+	<option value="6"></option>
+   	<option value="5">Galil-AR</option>
+ 	  <option value="4">AK47</option>
+ 	  <option value="3">M4A4</option>
+	  <option value="2">SG553</option>
+ 	  <option value="1">M4A1-S</option>
+  </select></p>
+  <img src = "Images/M4a1-s.png" width = "300" height = "200">
+  <p></p>
+	<input type="button" onclick="checkAnswers()" value="check answers">
+	<input type="text" id="score">
+     </div>
+    </div>
+  </body>
+</html>
