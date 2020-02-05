@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> HTTP & Security </title>
+	<meta charset="UTF-8">
+  </head>
+  <body>
+        <h1> HTTP & Security Questions</h1>
+		<h2>1. What is the Hypertext Transfer Protocol (HTTP)</h2>
+		<p>HTTP is one of the most important protocols for data communiation and is responsible for the transfer of data over the web.</p>
+		<h2>2. Why is HTTP called a stateless protocol?</h2>
+		<p>HTTP is a stateless protocol because once the session is ended (once you close the webpage) the transaction ends and the communication stops.</p>
+		<h2>3. Describe the three phases of establishing a session using client-server protocols such as HTTP</h2>
+		<p>The 3 phases of a client-server protocol are "OK" also known as 200 which means the connection has established,
+		   "Moved Permanently" also known as 301 which means that the URL resource has been changed and 
+			finally "Not Found" also known as 404 which means the server can't find the resource.</p>
+		<h2>4. Describe the parameters on a get and post request.</h2>
+		<p>The "GET" method is used to request data from whatever you're trying to access and will be sent first,
+		   followed by the "POST" method which will send the data to a server to create or update the resource.</p>
+		<h2>5. What are the HTTP response status code and What do the HTTP status codes, 200, and 404 indicate?</h2>
+		<p>The best way to describe the response status codes are a set of predefined reponses that will appear when a condition is met
+			as talked about previously the 200 status code means the connection has been established and 404 means the server can't find the resource.</p>
+		<h2>6. What are HTTP cookies? Give an example.</h2>
+		<p></p>
+		<h2>7. Why are cookies a security issue?</h2>
+		<p>The nature of cookies is to store some information about the user visiting the webpage and while they can't be used to spread viruses
+			so your computer is safe in that sense but the main security issue is to do with your privacy as they do store information about your habits online
+			which not everyone is happy sharing.</p>
+		<h2>8. Describe session hijacking and XSS</h2>
+		<p>Hijacking is the act of intercepting a device trying to access a website through some form of exploit and once this has been done the 
+		actual device is taken out of the equation and the hijacker acts as if it was that device so the website will send private information to them.
+		XSS is the process of injecting scripts into a webpage used by a device which will then rather direct the device to a malicious server or allow them to control the device.</p>
+		<h2>9. Describe Cross-site request forgery(CSRF)</h2>
+		<p>CSRF is an attack that tricks a browser into performing unwanted actions and kind of hijacks a legitimate website into doing it's dirty work.</p>
+		<h2>10. What are Cross-site HTTP requests (CORS) and what requests use CORS?</h2>
+		<p>CORS is a protocol that allows scripts running on a browser to interact with resources from a different origin and an example of a request that uses it is "fetch".</p>
+  </body>
+</html>
